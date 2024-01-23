@@ -36,7 +36,7 @@ Start:
                         else
                         {
                             Console.ForegroundColor = ConsoleColor.DarkRed;
-                            Console.WriteLine("Failed.");
+                            Console.WriteLine("Not Found.");
                             Console.ResetColor();
                             goto Start;
                         }

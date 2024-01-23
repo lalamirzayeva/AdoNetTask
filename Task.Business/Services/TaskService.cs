@@ -26,7 +26,9 @@ public class TaskService
         }
         else
         {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine($"Error: {httpResponseMessage.StatusCode} - {httpResponseMessage.ReasonPhrase}");
+            Console.ResetColor();
             return null;
         }
     }
@@ -101,7 +103,7 @@ public class TaskService
 
     public async Task<int> GetPostCountAsync(int userId)
     {
-        if (userId > 100 || userId < 1) throw new InvalidIdException("Please, enter valid User Id.");
+        if (userId > 10 || userId < 1) throw new InvalidIdException("Please, enter valid User Id.");
         string connString = @"Server=DESKTOP-EJ9B4A0\SQLEXPRESS;Database=P238Db;Trusted_Connection=true";
         int result = -1;
         using (SqlConnection conn = new SqlConnection(connString))

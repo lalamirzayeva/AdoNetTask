@@ -32,11 +32,6 @@ public class JSonStatic
             Console.WriteLine($"HTTP request error: {h.Message}");
             return null;
         }
-        catch (System.Text.Json.JsonException je)
-        {
-            Console.WriteLine($"JSON parsing error: {je.Message}");
-            return null;
-        }
     }
 }
 

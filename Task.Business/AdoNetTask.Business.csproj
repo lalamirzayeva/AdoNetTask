@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AdoNetTask.DataAccess\AdoNetTask.DataAccess.csproj" />
+    <ProjectReference Include="..\AdoNetTask.Core\AdoNetTask.Core.csproj" />
   </ItemGroup>
 
 </Project>
